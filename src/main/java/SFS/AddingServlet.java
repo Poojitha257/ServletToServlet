@@ -14,8 +14,11 @@ public class AddingServlet extends HttpServlet {
 		int i=Integer.parseInt(req.getParameter("num1"));
 		int j=Integer.parseInt(req.getParameter("num2"));
 		int k=i+j;
-		req.setAttribute("k", k);
-	req.getRequestDispatcher("sq").forward(req, resp);;
-	
+		
+		resp.sendRedirect("sq?k="+k);  // this is url Redirecting
+		
+//		req.setAttribute("k", k);
+//	req.getRequestDispatcher("sq").forward(req, resp);;
+
 	}
 	}

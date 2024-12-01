@@ -12,8 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 public class SqServlet  extends HttpServlet{
 @Override
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	int k=(int)req.getAttribute("k");
-	k=k*k;
-	resp.getWriter().print("calling servlet from  another servlet " + " Result is " + k);
+//	int k=(int)req.getAttribute("k");
+//	k=k*k;
+//	resp.getWriter().print("calling servlet from  another servlet " + " Result is " + k);
+
+int k=Integer.parseInt(req.getParameter("k"));
+resp.getWriter().print("sq is calling and Result is " + k);
 }
 }
