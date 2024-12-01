@@ -1,4 +1,7 @@
 We can call the servlet from another servlet by using RequestDispatcher and SendRedirect and even we can use Session management;
+
+
+
 1️⃣ Send Redirect:
 👉 Redirects the client to a new URL.
 🌐 Browser URL changes.
